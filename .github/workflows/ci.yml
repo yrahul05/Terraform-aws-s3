@@ -29,6 +29,6 @@ jobs:
         run: terraform validate -no-color
 
       - name: Terraform Plan
-        run: terraform plan -no-color -var="assume_role_policy=false"
+        run: terraform plan -no-color
         env:
           TF_LOG: WARN
